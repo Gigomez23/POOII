@@ -3,8 +3,8 @@ package models
 class Docente(
     nombre:String,
     edad: Int,
-    var especialidad: String,
-    var salario: Double
+    private var especialidad: String,
+    private var salario: Double
 ): Persona(nombre, edad) {
     fun getEspecialidad(): String {
         return especialidad

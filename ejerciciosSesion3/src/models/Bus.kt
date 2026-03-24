@@ -1,9 +1,9 @@
 package models
 
 class Bus (
-    var numeroRuta: Int,
-    var capacidad: Int,
-    var conductor: String
+    private var numeroRuta: Int,
+    private var capacidad: Int,
+    private var conductor: String
 ){
     fun getNumeroRuta(): Int{
         return numeroRuta

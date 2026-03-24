@@ -1,14 +1,17 @@
 package models
 
 class CuentaBancaria(
-    private val numeroCuenta: Int,
-    private var saldo: Double
+    private val numeroCuenta: Int = (100000..999999).random(),
+    private var saldo: Double = 0.0,
 ) {
     fun getNumeroCuenta(): Int {
         return numeroCuenta
     }
     fun getSaldo(): Double {
         return saldo
+    }
+    fun setSaldo(saldo: Double) {
+        this.saldo = saldo
     }
     fun depositar(monto: Double){
         println("Depositando $monto en la cuenta $numeroCuenta")

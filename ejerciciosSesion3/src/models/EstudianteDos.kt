@@ -15,6 +15,6 @@ class EstudianteDos(
     }
 
     override fun toString(): String {
-        return "EstudianteDos(nombre='${getNombre()}', edad=${getEdad()}, carrera='$carrera', anio=$anio)"
+        return "Estudiante (nombre='${getNombre()}', edad=${getEdad()}, carrera='$carrera', anio=$anio)"
     }
 }
